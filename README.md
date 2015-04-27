@@ -29,4 +29,10 @@ the blogs.
 ## Help
 Please feel free to email me at pkghosh99@gmail.com
 
-
+## Installation
+* Clone the project to your local directory
+* Clone chombo project to your local directory
+* Make sure you have maven installed
+* Build chpombo project by running `mvn clean install`
+* Build beymani by running `mvn clean package`
+* You'll end up with a jar file in `target` directory
