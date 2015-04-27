@@ -97,7 +97,7 @@ public  class MultiVariateDistribution extends Configured implements Tool {
             throws IOException, InterruptedException {
             String[] items  =  value.toString().split(fieldDelimRegex);
             if ( items.length  != numFields){
-            	context.getCounter("Data", "Invalid").increment(1);
+            	// context.getCounter("Data", "Invalid").increment(1);
             	return;
             }
             
@@ -117,7 +117,7 @@ public  class MultiVariateDistribution extends Configured implements Tool {
             		outVal.set(item);
             	}
             }
-        	context.getCounter("Data", "Processed record").increment(1);
+        	// context.getCounter("Data", "Processed record").increment(1);
 			context.write(outKey, outVal);
        }
 	}
